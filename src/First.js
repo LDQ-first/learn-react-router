@@ -25,20 +25,20 @@ import {
   Link
 } from 'react-router-dom'
 
-const App = () => (
+const First = ({match}) => (
   <Router>
     <div>
       <ul>
-        <li><Link to="/">首页</Link></li>
-        <li><Link to="/about">关于</Link></li>
-        <li><Link to="/topics">主题列表</Link></li>
+        <li><Link to={`${match.url}/`}>首页</Link></li>
+        <li><Link to={`${match.url}/about`}>关于</Link></li>
+        <li><Link to={`${match.url}/topics`}>主题列表</Link></li>
       </ul>
 
       <hr/>
 
-      <Route exact path='/' component={Home} />
-      <Route  path='/about' component={About} />
-      <Route  path='/topics' component={Topics} />
+      <Route exact path={`${match.url}/`} component={Home} />
+      <Route  path={`${match.url}/about`} component={About} />
+      <Route  path={`${match.url}/topics`} component={Topics} />
 
     </div>
   </Router>  
@@ -93,4 +93,4 @@ const Topic = ({match}) => (
 
 
 
-export default App;
+export default First
