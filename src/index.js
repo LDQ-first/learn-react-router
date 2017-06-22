@@ -9,6 +9,7 @@ import First from './First'
 import Second from './Second'
 import Third from './Third'
 import Fourth from './Fourth'
+import Fifth from './Fifth'
 
 const Index = () => (
     <Router>
@@ -20,6 +21,7 @@ const Index = () => (
                 <li><Link to='/Second'>URL参数</Link></li>
                 <li><Link to='/Third'>认证</Link></li>
                 <li><Link to='/Fourth'>自定义链接</Link></li>
+                <li><Link to='/Fifth'>阻止导航</Link></li>
             </ul>
 
             <Route exact path='/'/>
@@ -27,6 +29,7 @@ const Index = () => (
             <Route path='/Second' component={Second}/>
             <Route path='/Third' component={Third}/>
             <Route path='/Fourth' component={Fourth}/>
+            <Route path='/Fifth' component={Fifth}/>
         </div>
     </Router>
 ) 
