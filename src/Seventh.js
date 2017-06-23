@@ -19,7 +19,7 @@ export default ({match}) => (
     </Router>
 )
 
-const find = (id) => PEEPS.find(p => p.id == id)
+const find = (id) => PEEPS.find(p => p.id === id)
 
 const Person = ({ match }) => {
   const person = find(match.params.id)

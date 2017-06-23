@@ -13,6 +13,7 @@ import Fourth from './Fourth'
 import Fifth from './Fifth'
 import Sixth from './Sixth'
 import Seventh from './Seventh'
+import Eighth from './Eighth'
 
 const Index = () => (
     <Router>
@@ -27,6 +28,7 @@ const Index = () => (
                 <li><Link to='/Fifth'>阻止导航</Link></li>
                 <li><Link to='/Sixth'>未匹配（404）</Link></li>
                 <li><Link to='/Seventh'>路劲递归</Link></li>
+                <li><Link to='/Eighth'>侧边栏</Link></li>
             </ul>
 
             <Switch>
@@ -38,6 +40,7 @@ const Index = () => (
                 <Route path='/Fifth' component={Fifth}/>
                 <Route path='/Sixth' component={Sixth}/>
                 <Route path='/Seventh' component={Seventh}/>
+                <Route path='/Eighth' component={Eighth}/>
                 <Route component={NoMatch}/>
             </Switch>
         </div>
