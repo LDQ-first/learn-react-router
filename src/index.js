@@ -6,6 +6,7 @@ import {
     Link,
     Switch,
 } from 'react-router-dom'
+import './index.css'
 import First from './First'
 import Second from './Second'
 import Third from './Third'
@@ -14,6 +15,7 @@ import Fifth from './Fifth'
 import Sixth from './Sixth'
 import Seventh from './Seventh'
 import Eighth from './Eighth'
+import Ninth from './Ninth'
 
 const Index = () => (
     <Router>
@@ -29,6 +31,7 @@ const Index = () => (
                 <li><Link to='/Sixth'>未匹配（404）</Link></li>
                 <li><Link to='/Seventh'>路劲递归</Link></li>
                 <li><Link to='/Eighth'>侧边栏</Link></li>
+                <li><Link to='/Ninth'>过度动画</Link></li>
             </ul>
 
             <Switch>
@@ -41,6 +44,7 @@ const Index = () => (
                 <Route path='/Sixth' component={Sixth}/>
                 <Route path='/Seventh' component={Seventh}/>
                 <Route path='/Eighth' component={Eighth}/>
+                <Route path='/Ninth' component={Ninth}/>
                 <Route component={NoMatch}/>
             </Switch>
         </div>
