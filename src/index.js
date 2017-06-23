@@ -16,6 +16,7 @@ import Sixth from './Sixth'
 import Seventh from './Seventh'
 import Eighth from './Eighth'
 import Ninth from './Ninth'
+import Tenth from './Tenth'
 
 const Index = () => (
     <Router>
@@ -32,6 +33,7 @@ const Index = () => (
                 <li><Link to='/Seventh'>路劲递归</Link></li>
                 <li><Link to='/Eighth'>侧边栏</Link></li>
                 <li><Link to='/Ninth'>过度动画</Link></li>
+                <li><Link to='/Tenth'>模糊匹配</Link></li>
             </ul>
 
             <Switch>
@@ -45,6 +47,7 @@ const Index = () => (
                 <Route path='/Seventh' component={Seventh}/>
                 <Route path='/Eighth' component={Eighth}/>
                 <Route path='/Ninth' component={Ninth}/>
+                <Route path='/Tenth' component={Tenth}/>
                 <Route component={NoMatch}/>
             </Switch>
         </div>
