@@ -19,11 +19,10 @@ export default ({match}) => (
     </Router>
 )
 
-const find = (id) => PEEPS.find(p => p.id === id)
+const find = (id) => PEEPS.find(p => p.id === parseInt(id))
 
 const Person = ({ match }) => {
   const person = find(match.params.id)
-
   return (
     <div>
       <h3>{person.name} 的朋友</h3>

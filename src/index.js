@@ -25,7 +25,7 @@ const Index = () => (
     <Router>
         <div>
             <h2>React-Router</h2>
-            <ul>
+            <ul className="examples">
                 <li><Link to='/'>默认</Link></li>
                 <li><Link to='/First'>基本使用</Link></li>
                 <li><Link to='/Second'>URL参数</Link></li>
@@ -33,7 +33,7 @@ const Index = () => (
                 <li><Link to='/Fourth'>自定义链接</Link></li>
                 <li><Link to='/Fifth'>阻止导航</Link></li>
                 <li><Link to='/Sixth'>未匹配（404）</Link></li>
-                <li><Link to='/Seventh'>路劲递归</Link></li>
+                <li><Link to='/Seventh'>路径递归</Link></li>
                 <li><Link to='/Eighth'>侧边栏</Link></li>
                 <li><Link to='/Ninth'>过度动画</Link></li>
                 <li><Link to='/Tenth'>模糊匹配</Link></li>

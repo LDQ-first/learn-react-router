@@ -11,7 +11,7 @@ export default ({match}) => (
         <div>
             <OldSchoolMenuLink activeOnlyWhenExact={true} to={`${match.url}/`} label='首页' />
             <OldSchoolMenuLink to={`${match.url}/about`} label='关于'/>
-            <hr/>
+            <hr/>  
             <Route exact path={`${match.url}/`} component={Home}/>
             <Route path={`${match.url}/about`} component={About}/>
         </div>

@@ -12,10 +12,12 @@
   "devDependencies": {
     "react-scripts": "1.0.7"
   },
+  "homepage": "https://ldq-first.github.io/learn-react-router/build/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "bgit": "yarn build && git add . && git commit -m 'modify' && git push origin"
   }
 }

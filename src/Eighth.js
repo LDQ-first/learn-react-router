@@ -35,9 +35,9 @@ export default ({match}) => (
             background: '#f0f0f0'
         }}>
             <ul style={{ listStyleType: 'none', padding: 0 }}>
-            <li><Link to={`${match.url}/`}>主页</Link></li>
-            <li><Link to={`${match.url}/about`}>关于我们</Link></li>
-            <li><Link to={`${match.url}/contact`}>联系我们</Link></li>
+                <li><Link to={`${match.url}/`}>主页</Link></li>
+                <li><Link to={`${match.url}/about`}>关于我们</Link></li>
+                <li><Link to={`${match.url}/contact`}>联系我们</Link></li>
             </ul>
 
             {routes.map((route, index) => (
